@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="bf5aa3b026d5b5fd9f4ab5e8cf13499b9e016dfb">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.0.0-alpha2_ee438fdc0aaa8eaa0189f787ffaa101df3382c44.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacSource/DevTools/Android/AndroidStudio/ADK23/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0-alpha2/support-annotations-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-alpha2_fc34784ea5eaa22b5d0184c57feb684b0c874356.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b000ecceb9877fefcdc7ab1959ff03df91551656">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-measurement-8.3.0_5c87df73dae8f079bcb55db5337bdee82fcf2224.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha2/jars/libs/internal_impl-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-alpha2_fef4ec3d272d56ceea1f8b8afe89b194a14e1425.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="71eda10e33212e44245524b5087366ff8d805825">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.3.0_200ac6ebe1d9287a0b88792ea95ef5a290720e84.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0-alpha2_5c8b22cbcf6026299bda1c2d21e478ebc056af57.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/libs/mpandroidchartlibrary-2-2-4.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e5455fb794bfcbeb75da252dffd907794614f7fd">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/mpandroidchartlibrary-2-2-4_d1f28852a3f1d782998791fdbe51ed2fdc8e942a.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="661a632c3b434991d6364690cbe0f786371101cc">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0-alpha2_0faa516bdac576a84077c67073975a2ebc043f0b.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="01a90bbb9495a8bbf6f3cfdf12f1b35caaa9524b">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.3.0_5c116564681253cf36cc7a7387d0660a2b77fe54.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0-alpha2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="df7f6513d6e2aaa302bbac654807c6129b517090">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.0.0-alpha2_183ab954627dcc0356cfac126a43921fc8b651d6.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/libs/httpmime-4.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="9ba2dcdf94ce35c8a8e9bff242db0618ca932e92">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/httpmime-4.1_431d88e859c7746f66410ed8ae1285de85d6c8cd.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-8.3.0_b96f096b17157e5268380d781f986b917002e2d2.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/libs/universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_737e9dce0bf416805a4bab949be54948bd21fd7b.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="77f9593d979f4347344be233bd0d888315f79517">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-8.3.0_679563c2c1485e8dfe61402b89bac04428ab3384.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.3.0_8f022ed5a26e1640f756d927c9f06f063dd1678c.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/libs/hellocharts-library-1.5.8-2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="700944cb3a8ce4fe543cfac1a9146a11cbf702dc">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/hellocharts-library-1.5.8-2_ca28994de2dd338c621e0915ef9c64750dcce0f6.jar" />
+    </item>
+
+</items>
