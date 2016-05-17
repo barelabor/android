@@ -57,6 +57,7 @@ public class SplashActivity extends BaseActivity {
         };
 
         // Registering BroadcastReceiver
+
         registerReceiver();
 
         if (checkPlayServices()) {
@@ -66,6 +67,7 @@ public class SplashActivity extends BaseActivity {
         }else{
             showMainScreen();
         }
+
         /*
         new Handler().postDelayed(new Runnable() {
 

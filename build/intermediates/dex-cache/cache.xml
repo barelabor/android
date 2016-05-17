@@ -79,13 +79,6 @@
         <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/httpmime-4.1_431d88e859c7746f66410ed8ae1285de85d6c8cd.jar" />
     </item>
     <item
-        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
-        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-8.3.0_b96f096b17157e5268380d781f986b917002e2d2.jar" />
-    </item>
-    <item
         jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/libs/universal-image-loader-1.9.5.jar"
         jumboMode="false"
         revision="23.0.3"
@@ -93,11 +86,11 @@
         <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_737e9dce0bf416805a4bab949be54948bd21fd7b.jar" />
     </item>
     <item
-        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/jars/classes.jar"
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.3.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="77f9593d979f4347344be233bd0d888315f79517">
-        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-8.3.0_679563c2c1485e8dfe61402b89bac04428ab3384.jar" />
+        sha1="6d9ed9a288364688e7fcf6704776284dac1eb42e">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-8.3.0_b96f096b17157e5268380d781f986b917002e2d2.jar" />
     </item>
     <item
         jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/jars/classes.jar"
@@ -105,6 +98,13 @@
         revision="23.0.3"
         sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
         <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.3.0_8f022ed5a26e1640f756d927c9f06f063dd1678c.jar" />
+    </item>
+    <item
+        jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="77f9593d979f4347344be233bd0d888315f79517">
+        <dex dex="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-8.3.0_679563c2c1485e8dfe61402b89bac04428ab3384.jar" />
     </item>
     <item
         jar="/Volumes/Work/Work/KI/Android/BareLabor/BareLabor/app/libs/hellocharts-library-1.5.8-2.jar"

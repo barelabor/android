@@ -102,7 +102,7 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
                 */
                 ActivityCompat.requestPermissions(
                         this,
-                        new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
+                        new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CALL_PHONE},
                         PERMISSION_LOCATION_REQUEST_CODE);
 
             }else{
@@ -127,7 +127,8 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
 
     public static boolean checkPermission(final Context context) {
         return ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+                && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED;
     }
 
     @Override

@@ -47,9 +47,6 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
 
         initView();
 
-        LatLng latLng = new LatLng(data.getLat(), data.getLng());
-
-        googleMap.addMarker(createMarker(data.getLocation(), Support.getFullAddress(data), latLng));
         txtShopName.setText(data.getLocation());
         txtAddress.setText(Support.getFullAddress(data));
     }
@@ -124,6 +121,10 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
                     googleMap.setOnCameraChangeListener(null);
                 }
             });
+
+            LatLng pos = new LatLng(data.getLat(), data.getLng());
+
+            googleMap.addMarker(createMarker(data.getLocation(), Support.getFullAddress(data), pos));
         }
 
         txtShopName = (TextView) findViewById(R.id.txtShopName);

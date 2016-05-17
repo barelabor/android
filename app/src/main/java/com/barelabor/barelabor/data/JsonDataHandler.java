@@ -335,7 +335,7 @@ public class JsonDataHandler {
 			dataObject.setStatus(status);
 
 			if(status.equalsIgnoreCase(STRING_STATUS_OK)) {
-				dataObject.setEstimateId(response.getJSONObject("item").getString("estimateID"));
+				dataObject.setEstimateId(response.getString("item"));
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();

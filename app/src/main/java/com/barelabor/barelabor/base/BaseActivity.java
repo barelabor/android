@@ -131,6 +131,14 @@ public abstract class BaseActivity<T extends DataObject> extends LogActivity imp
 	}
 
 	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+
+		Support.getDataProviderCallback(this).setListener(null);
+		Support.getMessageService(this).hideAllDialogs();
+	}
+
+	@Override
 	protected void onPause() {
 		super.onPause();
 

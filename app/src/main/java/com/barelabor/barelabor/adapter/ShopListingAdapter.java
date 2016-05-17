@@ -95,6 +95,7 @@ public class ShopListingAdapter extends BaseAdapter {
 					if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
 						// TODO: Consider calling
 						Support.getMessageService(mContext).showWarning(mContext, "No permission", false);
+
 						return;
 					}else{
 						Intent callIntent = new Intent(Intent.ACTION_CALL);

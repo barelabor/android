@@ -67,8 +67,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             layoutEmail.setVisibility(View.GONE);
             txtUserName.setHint(R.string.hint_username);
 
-            txtUserName.setText("teste");
-            txtPassword.setText("password");
+            //txtUserName.setText("teste");
+            //txtPassword.setText("password");
         }else {
             layoutCPassword.setVisibility(View.VISIBLE);
             layoutEmail.setVisibility(View.VISIBLE);
@@ -105,6 +105,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 //		Toast.makeText(LoginActivity.this, userInfo, Toast.LENGTH_LONG).show();
 
         String deviceToken = Support.getSharedPreference(this).getDeviceToken();
+
         if(isLogin)
             return dataProvider.login(userName, password, deviceToken, callback);
         else
