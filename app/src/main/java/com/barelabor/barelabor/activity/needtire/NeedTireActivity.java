@@ -22,7 +22,9 @@ import com.barelabor.barelabor.data.model.FeatureModel;
 import com.barelabor.barelabor.data.model.MakeModel;
 import com.barelabor.barelabor.data.model.PriceModel;
 import com.barelabor.barelabor.data.model.TireModel;
+import com.barelabor.barelabor.util.Constants;
 import com.barelabor.barelabor.util.Support;
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -495,6 +497,9 @@ public class NeedTireActivity extends BaseActivity implements OnItemSelectedList
             switchBetweenVehicleAndSize();
         }else if(v == btnSubmit){
             Toast.makeText(NeedTireActivity.this, "Submit from " + ((isByVehicle) ? "By Vehicle" : "By Size"), Toast.LENGTH_LONG).show();
+
+            MixpanelAPI mixPanel =  MixpanelAPI.getInstance(this, Constants.MIXPANEL_TOKEN);
+            mixPanel.track(((isByVehicle) ? "Vehicle" : "Size") + " Submit clicked");
 
             if(validate()){
                 doSubmit();

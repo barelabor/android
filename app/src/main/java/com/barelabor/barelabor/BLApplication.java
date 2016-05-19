@@ -8,6 +8,7 @@ import com.barelabor.barelabor.data.DataProviderCallback;
 import com.barelabor.barelabor.util.MessageService;
 import com.barelabor.barelabor.util.NetworkMonitor;
 import com.barelabor.barelabor.util.Shared_Preferences;
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
 /**
  * Created by mac on 2/5/2016.
@@ -19,6 +20,7 @@ public class BLApplication extends Application {
     private DataProvider dataProvider;
     private MessageService messageService;
     private Shared_Preferences sharedPreferences;
+
     @Override
     public void onCreate() {
         super.onCreate();

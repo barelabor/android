@@ -17,9 +17,14 @@ import com.barelabor.barelabor.base.BaseActivity;
 import com.barelabor.barelabor.debug.Log;
 import com.barelabor.barelabor.gcm.QuickstartPreferences;
 import com.barelabor.barelabor.gcm.RegistrationIntentService;
+import com.barelabor.barelabor.util.Constants;
 import com.barelabor.barelabor.util.Support;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SplashActivity extends BaseActivity {
 
@@ -32,6 +37,9 @@ public class SplashActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        MixpanelAPI mixPanel =  MixpanelAPI.getInstance(this, Constants.MIXPANEL_TOKEN);
+
+        mixPanel.track("App launched");
 
         Support.getMessageService(this).showProgressDialog(this, true);
         mRegistrationBroadcastReceiver = new BroadcastReceiver() {

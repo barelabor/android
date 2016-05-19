@@ -24,6 +24,7 @@ import com.barelabor.barelabor.data.DataProvider;
 import com.barelabor.barelabor.data.DataProviderCallback;
 import com.barelabor.barelabor.data.model.ShopObject;
 import com.barelabor.barelabor.debug.Log;
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;

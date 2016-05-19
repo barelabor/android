@@ -24,7 +24,9 @@ import com.barelabor.barelabor.data.JsonDataHandler;
 import com.barelabor.barelabor.data.model.DataObject;
 import com.barelabor.barelabor.data.model.EstimateModel;
 import com.barelabor.barelabor.data.model.UserModel;
+import com.barelabor.barelabor.util.Constants;
 import com.barelabor.barelabor.util.Support;
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
 public class MenuActivity extends BaseActivity implements View.OnClickListener{
 
@@ -81,6 +83,9 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
             //startActivity(new Intent(MenuActivity.this, ChartActivity.class));
 
         }else if(v == btnFind){
+
+            MixpanelAPI mixPanel =  MixpanelAPI.getInstance(this, Constants.MIXPANEL_TOKEN);
+            mixPanel.track("Find A Location clicked");
 
             if(!checkPermission(MenuActivity.this)){
 
