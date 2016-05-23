@@ -8,12 +8,17 @@ import java.util.List;
 public class PriceModel extends DataObject{
 
     private List<String> priceList;
-
+    private String ratingJSONString;
     public List<String> getPriceList() {
         return priceList;
     }
-
+    public String getRatingString() {
+        return ratingJSONString;
+    }
     public void setPriceList(List<String> priceList) {
         this.priceList = priceList;
+    }
+    public void setRatingString(String ratingJSONString) {
+        this.ratingJSONString = ratingJSONString;
     }
 }

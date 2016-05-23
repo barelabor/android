@@ -1,16 +1,17 @@
 package com.barelabor.barelabor.data.model;
 
-import java.util.List;
-
 /**
  * Created by mac on 4/5/2016.
  */
 public class EstimateModel extends DataObject{
-
     private String estimateId;
     private String lowPrice;
     private String highPrice;
     private String avgPrice;
+    private String repairArrayString;
+    private String highCostArrayString;
+    private String averageCostArrayString;
+    private String lowCostArrayString;
 
     public String getEstimateId() {
         return estimateId;
@@ -42,5 +43,34 @@ public class EstimateModel extends DataObject{
 
     public void setAvgPrice(String avgPrice) {
         this.avgPrice = avgPrice;
+    }
+
+    public String getRepairArrayString() {
+        return repairArrayString;
+    }
+
+    public void setRepairArrayString(String repairArrayString) {
+        this.repairArrayString = repairArrayString;
+    }
+    public String getHighCostArrayStringPrice() {
+        return highCostArrayString;
+    }
+
+    public void setHighCostArrayStringPrice(String highCostArrayString) {
+        this.highCostArrayString = highCostArrayString;
+    }
+    public String getAverageCostArrayStringPrice() {
+        return averageCostArrayString;
+    }
+
+    public void setAverageCostArrayStringPrice(String averageCostArrayString) {
+        this.averageCostArrayString = averageCostArrayString;
+    }
+    public String getLowCostArrayStringPrice() {
+        return lowCostArrayString;
+    }
+
+    public void setLowCostArrayStringPrice(String lowCostArrayString) {
+        this.lowCostArrayString = lowCostArrayString;
     }
 }

@@ -61,7 +61,10 @@ public class MyGcmListenerService extends GcmListenerService {
         Log.d(TAG, "title: " + title);
 
         Log.d(TAG, "lowPrice: " + data.get("lowCost"));
-
+        String repairArrayString = data.getString("repariArray");
+        String highCostArrayString = data.getString("highCostArray");
+        String averageCostArrayString = data.getString("averageCostArray");
+        String lowCostArrayString = data.getString("lowCostArray");
         String lowPrice = data.getString("lowCost");
         String highPrice = data.getString("highCost");
         String avgPrice = data.getString("averageCost");
@@ -77,7 +80,7 @@ public class MyGcmListenerService extends GcmListenerService {
          * In some cases it may be useful to show a notification indicating to the user
          * that a message was received.
          */
-        sendNotification(lowPrice, highPrice, avgPrice);
+        sendNotification(repairArrayString, highCostArrayString, averageCostArrayString, lowCostArrayString, lowPrice, highPrice, avgPrice);
         // [END_EXCLUDE]
     }
     // [END receive_message]
@@ -87,7 +90,7 @@ public class MyGcmListenerService extends GcmListenerService {
      *
      * @param message GCM message received.
      */
-    private void sendNotification(String lowPrice, String highPrice, String avgPrice) {
+    private void sendNotification(String repairArrayString, String highCostArrayString, String averageCostArrayString, String lowCostArrayString, String lowPrice, String highPrice, String avgPrice) {
 
 //        String lowPrice = "0", highPrice = "0", avgPrice = "0";
 //        try {
@@ -103,6 +106,10 @@ public class MyGcmListenerService extends GcmListenerService {
         intent.putExtra("low_price", lowPrice);
         intent.putExtra("high_price", highPrice);
         intent.putExtra("avg_price", avgPrice);
+        intent.putExtra("repairArrayString", repairArrayString);
+        intent.putExtra("highCostArrayString", highCostArrayString);
+        intent.putExtra("averageCostArrayString", averageCostArrayString);
+        intent.putExtra("lowCostArrayString", lowCostArrayString);
         intent.putExtra("notification", true);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

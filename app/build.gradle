@@ -31,5 +31,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:8.3.0'
     compile 'com.google.android.gms:play-services-location:8.3.0'
     compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.baoyz.actionsheet:library:1.1.5'
     compile files('libs/httpmime-4.1.jar')
 }

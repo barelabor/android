@@ -43,6 +43,7 @@ public class BLApplication extends Application {
     }
 
     public DataProviderCallback getDataProviderCallback() {
+        System.out.println("dataProviderCallback = " + dataProviderCallback);
         return dataProviderCallback;
     }
 

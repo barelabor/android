@@ -1,9 +1,5 @@
 package com.barelabor.barelabor.data;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import com.barelabor.barelabor.data.model.DataObject;
 import com.barelabor.barelabor.data.model.EstimateModel;
 import com.barelabor.barelabor.data.model.FeatureModel;
@@ -16,7 +12,10 @@ import com.barelabor.barelabor.data.model.TireModel;
 import com.barelabor.barelabor.data.model.UserModel;
 import com.barelabor.barelabor.debug.Log;
 import com.barelabor.barelabor.util.NotImplementedException;
-import com.barelabor.barelabor.util.Support;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -266,12 +265,11 @@ public class JsonDataHandler {
 	private PriceModel readVehiclePriceData(JSONObject json) throws DataFormatException {
 
 		PriceModel priceModel = new PriceModel();
-
 		try {
 			Log.d("Vehicle Price Result", json.getJSONArray("items").toString());
 
 			JSONArray jData = json.getJSONArray("items");
-
+			String ratingJSONString = json.getJSONArray("ratings").toString();
 			ArrayList<String> priceList = new ArrayList<String>();
 
 			for (int i = 0; i < jData.length(); i++){
@@ -279,6 +277,7 @@ public class JsonDataHandler {
 			}
 
 			priceModel.setPriceList(priceList);
+			priceModel.setRatingString(ratingJSONString);
 
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -295,7 +294,7 @@ public class JsonDataHandler {
 			Log.d("Vehicle Price Result", json.getJSONArray("items").toString());
 
 			JSONArray jData = json.getJSONArray("items");
-
+			String ratingJSONString = json.getJSONArray("ratings").toString();
 			ArrayList<String> priceList = new ArrayList<String>();
 
 			for (int i = 0; i < jData.length(); i++){
@@ -303,7 +302,7 @@ public class JsonDataHandler {
 			}
 
 			priceModel.setPriceList(priceList);
-
+			priceModel.setRatingString(ratingJSONString);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -345,7 +344,7 @@ public class JsonDataHandler {
 	}
 
 	private DataObject readGetEstimate(JSONObject response) throws DataFormatException {
-
+		System.out.println("View History");
 		EstimateModel dataObject = new EstimateModel();
 
 		try {
@@ -357,6 +356,10 @@ public class JsonDataHandler {
 				dataObject.setLowPrice(response.getJSONObject("item").getString("lowCost"));
 				dataObject.setAvgPrice(response.getJSONObject("item").getString("averageCost"));
 				dataObject.setHighPrice(response.getJSONObject("item").getString("highCost"));
+				dataObject.setRepairArrayString(response.getJSONObject("item").getString("repairArray"));
+				dataObject.setHighCostArrayStringPrice(response.getJSONObject("item").getString("highCostArray"));
+				dataObject.setAverageCostArrayStringPrice(response.getJSONObject("item").getString("averageCostArray"));
+				dataObject.setLowCostArrayStringPrice(response.getJSONObject("item").getString("lowCostArray"));
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();

@@ -26,6 +26,9 @@ import com.barelabor.barelabor.util.Constants;
 import com.barelabor.barelabor.util.Support;
 import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -402,7 +405,7 @@ public class NeedTireActivity extends BaseActivity implements OnItemSelectedList
 
     @Override
     protected void handlePostResponse(DataObject dataObject) {
-
+        System.out.println("DataObject = " + dataObject);
         switch (status){
             case STATUS_LOAD_MAKE:
 
@@ -451,7 +454,16 @@ public class NeedTireActivity extends BaseActivity implements OnItemSelectedList
     }
 
     private void showChart(PriceModel priceModel, String strQuantity){
+        System.out.println("Price"+priceModel.getRatingString());
+        String ratingJSONString = priceModel.getRatingString();
+        try {
+            JSONArray ratingArray = new JSONArray(ratingJSONString);
+            for (int i = 0;i < ratingArray.length();i++) {
 
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         int quantity = Integer.parseInt(strQuantity);
 
         ArrayList<String> priceList = (ArrayList<String>) priceModel.getPriceList();
@@ -481,9 +493,12 @@ public class NeedTireActivity extends BaseActivity implements OnItemSelectedList
 
 
         Intent intent2 = new Intent(NeedTireActivity.this, ChartActivity.class);
+
         intent2.putExtra("low_price", strLowPrice);
         intent2.putExtra("high_price", strHighPrice);
         intent2.putExtra("avg_price", strAvgPrice);
+        intent2.putExtra("rating_string", ratingJSONString);
+        intent2.putExtra("from_need_tire", true);
 
         startActivity(intent2);
     }
