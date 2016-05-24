@@ -173,7 +173,7 @@ public class ChartActivity extends AppCompatActivity implements View.OnClickList
                 else {
                     btn.setBackgroundColor(Color.parseColor("#CCCCCC"));
                 }
-                RelativeLayout.LayoutParams btn_param = new RelativeLayout.LayoutParams(20, 200+20*i);
+                RelativeLayout.LayoutParams btn_param = new RelativeLayout.LayoutParams(40, 200+20*i);
                 btn_param.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
                 btn_param.setMargins(perBtnWidth * (i+1), 10, 10, 20);
                 btn.setOnClickListener(this);
@@ -201,7 +201,7 @@ public class ChartActivity extends AppCompatActivity implements View.OnClickList
             Button btn = new Button(this);
             btn.setTag(i);
             btn.setBackgroundColor(colorArry[i]);
-            RelativeLayout.LayoutParams btn_param = new RelativeLayout.LayoutParams(20, 200 + 20 * i);
+            RelativeLayout.LayoutParams btn_param = new RelativeLayout.LayoutParams(40, 200 + 20 * i);
             btn_param.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
             btn_param.setMargins(perBtnWidth * (i + 1), 10, 10, 20);
             btn.setOnClickListener(this);
