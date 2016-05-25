@@ -28,7 +28,7 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
 
     private final int PERMISSION_LOCATION_REQUEST_CODE = 1001;
 
-    Button btnScan, btnNeedTire, btnFind, btnExperience, btnHistory;
+    Button btnScan, btnNeedTire, btnFind, btnExperience, btnHistory, btnTutor;
 
     private String userId, estimateId;
     @Override
@@ -56,6 +56,7 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
 
     private void initView(){
         btnScan = (Button) findViewById(R.id.btnScan);
+        btnTutor = (Button) findViewById(R.id.btnTutor);
         btnNeedTire = (Button) findViewById(R.id.btnTire);
         btnFind = (Button) findViewById(R.id.btnFind);
         btnExperience = (Button) findViewById(R.id.btnExperience);
@@ -66,6 +67,7 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
         btnFind.setOnClickListener(this);
         btnExperience.setOnClickListener(this);
         btnHistory.setOnClickListener(this);
+        btnTutor.setOnClickListener(this);
     }
 
     @Override
@@ -116,7 +118,11 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener{
 
         }else if(v == btnExperience){
             startActivity(new Intent(MenuActivity.this, ExperienceActivity.class));
-        }else if(v == btnHistory){
+        }
+        else if(v == btnTutor) {
+            startActivity(new Intent(MenuActivity.this, introActivity.class));
+        }else
+        if(v == btnHistory){
 //            startActivity(new Intent(MenuActivity.this, HistoryActivity.class));
 
             userId = Support.getSharedPreference(this).getUserId();

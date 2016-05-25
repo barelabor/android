@@ -76,6 +76,16 @@
                 android:layout_gravity="center_horizontal"
                 android:text="@string/button_history"
                 android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/btnTutor"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/help"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"/>
 
         </LinearLayout>
 

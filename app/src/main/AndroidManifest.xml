@@ -58,6 +58,9 @@
         <activity android:name=".activity.experience.ExperienceDetailActivity" />
         <activity android:name=".activity.find.FindActivity" />
         <activity android:name=".activity.find.MapActivity" />
+        <activity android:name=".activity.introActivity"
+            android:label="App Intro"
+            android:theme="@style/FullscreenTheme"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -97,10 +100,9 @@
         </service>
         <service
             android:name=".gcm.RegistrationIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
 
-        <activity android:name=".activity.history.HistoryActivity"></activity>
-
+        <activity android:name=".activity.history.HistoryActivity" />
         <activity android:name="com.mixpanel.android.surveys.SurveyActivity" />
     </application>
 
